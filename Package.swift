@@ -12,13 +12,12 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/SnapKit/SnapKit", from: "5.0.0"),
-        .package(url: "https://github.com/felixbuenemann/Device", from: "3.3.0")
+        .package(url: "https://github.com/SnapKit/SnapKit", from: "5.0.0")
     ],
     targets: [
         .target(
             name: "AssetsPickerViewController",
-            dependencies: ["SnapKit", "Device"],
+            dependencies: ["SnapKit"],
             path: "AssetsPickerViewController",
             sources: ["Classes"],
             resources: [.process("Assets")]
